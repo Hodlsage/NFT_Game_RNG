@@ -1,0 +1,95 @@
+{
+	"compiler": {
+		"version": "0.4.25+commit.59dbf8f1"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"transferOwnership(address)": {
+					"details": "Allows the current owner to transfer control of the contract to a newOwner.",
+					"params": {
+						"newOwner": "The address to transfer ownership to."
+					}
+				}
+			}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Common/Controllable.sol": "Controllable"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Common/Controllable.sol": {
+			"keccak256": "0xdd06dbffc96ddc374d4e362b4b117514a42405761a72d97c2faee711f52472b0",
+			"urls": [
+				"bzzr://aab72843296ad860b8fab32e0b5b307c7df30f4ba4321abe7ad4e83aaf73dd4b"
+			]
+		},
+		"contracts/Common/Ownable.sol": {
+			"keccak256": "0x1601539434d45cd9749ed5cf475fe9aa53ed1c50aa0c4a75c0068adef5bedd3e",
+			"urls": [
+				"bzzr://e52f26101a97bac717ca822b7991b4fd53be88e5b23b7b661c89231d67a6897f"
+			]
+		}
+	},
+	"version": 1
+}
